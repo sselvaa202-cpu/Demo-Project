@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="BuildPro Hardware - tools, electrical supplies, plumbing materials, and construction essentials."
+  />
+
+  <title>BuildPro Hardware</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span>Professional tools for every project</span>
+      <span>Free delivery on orders above ₹999</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <span class="logo-symbol">BP</span>
+        <span>Build<span>Pro</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#projects">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-button" id="themeButton" title="Change theme">
+          ◐
+        </button>
+
+        <button class="cart-button" id="cartButton">
+          Cart
+          <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero reveal" id="home">
+      <div class="hero-grid container">
+
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span></span>
+            TOOLS THAT WORK AS HARD AS YOU DO
+          </div>
+
+          <h1>
+            Build better.
+            <strong>Work smarter.</strong>
+          </h1>
+
+          <p>
+            Quality hardware, professional tools, electrical supplies, and
+            construction essentials for every job.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="button button-primary">
+              Shop tools <span>→</span>
+            </a>
+
+            <a href="#categories" class="button button-outline">
+              Browse categories
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>15K+</strong>
+              <small>Products</small>
+            </div>
+
+            <div>
+              <strong>25+</strong>
+              <small>Years of trust</small>
+            </div>
+
+            <div>
+              <strong>4.9</strong>
+              <small>Customer rating</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-grid-lines"></div>
+
+          <div class="hero-image-card">
+            <img
+              src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=85"
+              alt="Professional tools"
+            />
+
+            <div class="image-overlay"></div>
+
+            <div class="hero-image-label">
+              <small>PROFESSIONAL GRADE</small>
+              <strong>READY FOR  
+THE JOB</strong>
+            </div>
+          </div>
+
+          <div class="floating-tool tool-one">🔨</div>
+          <div class="floating-tool tool-two">🔧</div>
+
+          <div class="delivery-card">
+            <span>🚚</span>
+            <div>
+              <strong>Fast delivery</strong>
+              <small>Across your city</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits reveal">
+      <div class="container benefits-grid">
+
+        <div class="benefit">
+          <span>✓</span>
+          <div>
+            <strong>Genuine products</strong>
+            <small>Trusted brands only</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>⚙</span>
+          <div>
+            <strong>Expert advice</strong>
+            <small>Help for every project</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>🚚</span>
+          <div>
+            <strong>Quick delivery</strong>
+            <small>On-time dispatch</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>↺</span>
+          <div>
+            <strong>Easy returns</strong>
+            <small>Simple return policy</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">SHOP BY CATEGORY</div>
+            <h2>Everything for your next project.</h2>
+          </div>
+
+          <p>
+            From hand tools to electrical materials, find dependable products
+            in one place.
+          </p>
+        </div>
+
+        <div class="category-grid">
+
+          <button class="category-card category-orange reveal" data-category="Hand Tools">
+            <span>🔨</span>
+            <strong>Hand Tools</strong>
+            <small>Hammers, pliers, spanners</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-blue reveal" data-category="Power Tools">
+            <span>🛠️</span>
+            <strong>Power Tools</strong>
+            <small>Drills, grinders, saws</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-yellow reveal" data-category="Electrical">
+            <span>⚡</span>
+            <strong>Electrical</strong>
+            <small>Wires, switches, cables</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-green reveal" data-category="Plumbing">
+            <span>🔩</span>
+            <strong>Plumbing</strong>
+            <small>Pipes, taps, fittings</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-purple reveal" data-category="Safety">
+            <span>🦺</span>
+            <strong>Safety Gear</strong>
+            <small>Helmets, gloves, shoes</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-red reveal" data-category="Paint">
+            <span>🎨</span>
+            <strong>Paint & Decor</strong>
+            <small>Paints, brushes, rollers</small>
+            <b>→</b>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">FEATURED PRODUCTS</div>
+            <h2>Built for the job.</h2>
+          </div>
+
+          <p>
+            Reliable tools and materials selected for professionals and DIY
+            enthusiasts.
+          </p>
+        </div>
+
+        <div class="product-toolbar reveal">
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Search tools, materials, products..."
+            />
+          </div>
+
+          <select id="categoryFilter">
+            <option value="All">All categories</option>
+            <option value="Hand Tools">Hand Tools</option>
+            <option value="Power Tools">Power Tools</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Safety">Safety</option>
+            <option value="Paint">Paint</option>
+          </select>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p class="empty-products" id="emptyProducts">
+          No products found. Try another search.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer-section" id="projects">
+      <div class="container offer-banner reveal">
+
+        <div class="offer-content">
+          <div class="eyebrow light">PROJECT STARTER PACK</div>
+
+          <h2>
+            Everything you need
+            <strong>to get started.</strong>
+          </h2>
+
+          <p>
+            Save more when you purchase our carefully selected DIY and
+            contractor tool kits.
+          </p>
+
+          <button class="button button-light" id="offerButton">
+            View tool kits <span>→</span>
+          </button>
+        </div>
+
+        <div class="offer-visual">
+          <div class="offer-glow"></div>
+
+          <img
+            src="https://images.unsplash.com/photo-1581147036324-c17ac41a0aaf?auto=format&fit=crop&w=900&q=85"
+            alt="Power drill and tools"
+          />
+
+          <div class="offer-badge">
+            UP TO
+            <strong>25%</strong>
+            OFF
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section">
+      <div class="container">
+
+        <div class="section-heading centered reveal">
+          <div class="eyebrow">MORE THAN A HARDWARE STORE</div>
+          <h2>Support for every build.</h2>
+          <p>
+            Get the products, guidance, and services you need to complete your
+            project with confidence.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <span>📐</span>
+            <h3>Project consultation</h3>
+            <p>
+              Tell us about your project and our team will help you choose the
+              right products.
+            </p>
+            <a href="#contact">Talk to an expert →</a>
+          </article>
+
+          <article class="service-card featured-service reveal">
+            <span>🚛</span>
+            <h3>Bulk order support</h3>
+            <p>
+              Special prices and reliable delivery for contractors, builders,
+              and businesses.
+            </p>
+            <a href="#contact">Request a quote →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span>🔧</span>
+            <h3>Tool servicing</h3>
+            <p>
+              Keep your equipment working smoothly with our repair and
+              maintenance support.
+            </p>
+            <a href="#contact">Learn more →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section reveal">
+      <div class="container newsletter-content">
+        <div>
+          <div class="eyebrow">BUILD SMARTER</div>
+          <h2>Get offers and project tips.</h2>
+          <p>
+            Subscribe for new products, contractor deals, and useful project
+            advice.
+          </p>
+        </div>
+
+        <form id="newsletterForm">
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Your email address"
+            required
+          />
+
+          <button class="button button-dark" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="eyebrow">CONTACT BUILDPRO</div>
+          <h2>Let us help with your next project.</h2>
+          <p>
+            Need product advice, a bulk quotation, or help finding a specific
+            part? Send us a message.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <span>☎</span>
+              <strong>+91 98765 43210</strong>
+            </div>
+
+            <div>
+              <span>✉</span>
+              <strong>hello@buildpro.com</strong>
+            </div>
+
+            <div>
+              <span>⌖</span>
+              <strong>24 Industrial Road, Chennai</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send an enquiry</h3>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required />
+
+          <label for="message">How can we help?</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Tell us about your requirement..."
+            required
+          ></textarea>
+
+          <button class="button button-primary full-width" type="submit">
+            Send enquiry <span>→</span>
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-symbol">BP</span>
+          <span>Build<span>Pro</span></span>
+        </a>
+
+        <p>
+          Quality hardware and professional support for every project.
+        </p>
+
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">◎</a>
+          <a href="#">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#projects">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Customer care</h4>
+        <a href="#">Delivery information</a>
+        <a href="#">Returns policy</a>
+        <a href="#">Warranty support</a>
+        <a href="#">Terms and conditions</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Store hours</h4>
+        <p>Monday – Saturday</p>
+        <strong>8:00 AM – 8:00 PM</strong>
+        <small>Sunday: 9:00 AM – 2:00 PM</small>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 BuildPro Hardware.</span>
+      <span>Tools for people who build.</span>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div>
+        <div class="eyebrow">YOUR CART</div>
+        <h3>Selected products</h3>
+      </div>
+
+      <button class="close-button" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <span>🛒</span>
+        <p>Your cart is empty.</p>
+        <small>Add tools to get started.</small>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="button button-primary full-width" id="checkoutButton">
+        Proceed to checkout
+      </button>
+
+      <small>Demo checkout — no payment is processed.</small>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FreshBasket Supermarket</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="announcement">
+    <div class="container announcement-content">
+      <span>Fresh groceries delivered to your doorstep</span>
+      <span>Free delivery on orders above ₹499</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">✦</span>
+        <span>Fresh<span>Basket</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+          ☾
+        </button>
+
+        <button class="cart-button" id="cartButton">
+          🛒 Cart
+          <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section-reveal" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="small-label">YOUR EVERYDAY SUPERMARKET</div>
+
+          <h1>
+            Fresh food.
+            <span>Better living.</span>
+          </h1>
+
+          <p>
+            Shop fresh fruits, vegetables, groceries, snacks, beverages,
+            and household essentials at great prices.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">
+              Start shopping <span>→</span>
+            </a>
+
+            <a href="#offers" class="btn btn-outline">
+              View offers
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>10K+</strong>
+              <small>Happy customers</small>
+            </div>
+
+            <div>
+              <strong>5K+</strong>
+              <small>Products available</small>
+            </div>
+
+            <div>
+              <strong>30 min</strong>
+              <small>Quick delivery</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-circle"></div>
+
+          <div class="floating-fruit fruit-one">🍊</div>
+          <div class="floating-fruit fruit-two">🥦</div>
+          <div class="floating-fruit fruit-three">🍎</div>
+
+          <div class="grocery-bag">
+            <div class="bag-handle"></div>
+            <div class="bag-label">
+              <strong>FRESH</strong>
+              <small>EVERY DAY</small>
+            </div>
+          </div>
+
+          <div class="delivery-card">
+            <span>🚚</span>
+            <div>
+              <strong>Fast delivery</strong>
+              <small>At your doorstep</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits section-reveal">
+      <div class="container benefits-grid">
+
+        <div class="benefit">
+          <span>🥬</span>
+          <div>
+            <strong>Farm fresh</strong>
+            <small>Picked with care</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>🚚</span>
+          <div>
+            <strong>Quick delivery</strong>
+            <small>Same-day delivery</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>🔒</span>
+          <div>
+            <strong>Secure payment</strong>
+            <small>Safe checkout</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>↩</span>
+          <div>
+            <strong>Easy returns</strong>
+            <small>Simple return policy</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+
+        <div class="section-title section-reveal">
+          <div>
+            <div class="small-label">SHOP BY CATEGORY</div>
+            <h2>Everything you need.</h2>
+          </div>
+
+          <p>
+            Explore our wide range of fresh products and daily essentials.
+          </p>
+        </div>
+
+        <div class="category-grid">
+
+          <button class="category-card category-green section-reveal" data-category="Fruits">
+            <span>🍎</span>
+            <strong>Fruits</strong>
+            <small>Fresh and juicy</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-orange section-reveal" data-category="Vegetables">
+            <span>🥕</span>
+            <strong>Vegetables</strong>
+            <small>Farm fresh produce</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-blue section-reveal" data-category="Dairy">
+            <span>🥛</span>
+            <strong>Dairy</strong>
+            <small>Milk and more</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-purple section-reveal" data-category="Snacks">
+            <span>🍿</span>
+            <strong>Snacks</strong>
+            <small>Tasty favourites</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-yellow section-reveal" data-category="Beverages">
+            <span>🧃</span>
+            <strong>Beverages</strong>
+            <small>Refresh yourself</small>
+            <b>→</b>
+          </button>
+
+          <button class="category-card category-pink section-reveal" data-category="Household">
+            <span>🧽</span>
+            <strong>Household</strong>
+            <small>For your home</small>
+            <b>→</b>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+      <div class="container">
+
+        <div class="section-title section-reveal">
+          <div>
+            <div class="small-label">POPULAR PRODUCTS</div>
+            <h2>Fresh picks for you.</h2>
+          </div>
+        </div>
+
+        <div class="product-toolbar section-reveal">
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Search for products..."
+            />
+          </div>
+
+          <select id="categoryFilter">
+            <option value="All">All categories</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Household">Household</option>
+          </select>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p class="empty-products" id="emptyProducts">
+          No products found. Try another search.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offers-section" id="offers">
+      <div class="container offer-banner section-reveal">
+
+        <div class="offer-content">
+          <div class="small-label light-label">WEEKEND OFFER</div>
+
+          <h2>
+            Save more on
+            <span>fresh essentials.</span>
+          </h2>
+
+          <p>
+            Get up to 30% off on selected fruits, vegetables, and household
+            essentials this weekend.
+          </p>
+
+          <button class="btn btn-light" id="offerButton">
+            Shop the offer <span>→</span>
+          </button>
+        </div>
+
+        <div class="offer-art">
+          <div class="offer-circle"></div>
+          <div class="offer-fruit fruit-a">🍅</div>
+          <div class="offer-fruit fruit-b">🥑</div>
+          <div class="offer-fruit fruit-c">🍋</div>
+          <div class="offer-discount">30%<small>OFF</small></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section why-section">
+      <div class="container">
+
+        <div class="section-title centered section-reveal">
+          <div class="small-label">WHY FRESHBASKET</div>
+          <h2>Shopping made easy.</h2>
+          <p>
+            Everything we do is designed to make grocery shopping faster,
+            fresher, and more convenient.
+          </p>
+        </div>
+
+        <div class="why-grid">
+
+          <article class="why-card section-reveal">
+            <span>🌱</span>
+            <h3>Quality you can trust</h3>
+            <p>
+              Every product is carefully selected to meet our quality standards.
+            </p>
+          </article>
+
+          <article class="why-card featured-why section-reveal">
+            <span>⚡</span>
+            <h3>Fast and convenient</h3>
+            <p>
+              Order from home and receive your groceries quickly and safely.
+            </p>
+          </article>
+
+          <article class="why-card section-reveal">
+            <span>💰</span>
+            <h3>Great everyday prices</h3>
+            <p>
+              Enjoy competitive prices, daily deals, and special discounts.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section section-reveal">
+      <div class="container newsletter-content">
+
+        <div>
+          <div class="small-label">STAY UPDATED</div>
+          <h2>Fresh offers in your inbox.</h2>
+          <p>Subscribe for new deals, recipes, and supermarket updates.</p>
+        </div>
+
+        <form id="newsletterForm">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button class="btn btn-dark" type="submit">
+            Subscribe
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info section-reveal">
+          <div class="small-label">CONTACT US</div>
+          <h2>We are here to help.</h2>
+          <p>
+            Have a question about your order or delivery? Our support team is
+            ready to help.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <span>☎</span>
+              <strong>+91 98765 43210</strong>
+            </div>
+
+            <div>
+              <span>✉</span>
+              <strong>hello@freshbasket.com</strong>
+            </div>
+
+            <div>
+              <span>⌖</span>
+              <strong>12 Market Road, Chennai</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form section-reveal" id="contactForm">
+          <h3>Send us a message</h3>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+
+          <button class="btn btn-primary full-width" type="submit">
+            Send message <span>→</span>
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark">✦</span>
+          <span>Fresh<span>Basket</span></span>
+        </a>
+
+        <p>
+          Your trusted neighbourhood supermarket for fresh products and
+          everyday essentials.
+        </p>
+
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">◎</a>
+          <a href="#">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Customer care</h4>
+        <a href="#">Delivery information</a>
+        <a href="#">Return policy</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms and conditions</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Store hours</h4>
+        <p>Monday – Sunday</p>
+        <strong>7:00 AM – 10:00 PM</strong>
+        <small>Delivery available daily</small>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 FreshBasket Supermarket.</span>
+      <span>Fresh products. Better living.</span>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div>
+        <div class="small-label">YOUR CART</div>
+        <h3>Shopping cart</h3>
+      </div>
+
+      <button class="close-button" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <span>🛒</span>
+        <p>Your cart is empty.</p>
+        <small>Add products to start shopping.</small>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="btn btn-primary full-width" id="checkoutButton">
+        Proceed to checkout
+      </button>
+
+      <small>Secure checkout demo</small>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

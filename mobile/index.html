@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FixPoint Mobile Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <span>Trusted mobile sales, repair, and accessories</span>
+      <span>Same-day repair available</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">FP</span>
+        <span>Fix<span>Point</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#phones">Phones</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#repair">Repair</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-button" id="themeButton" title="Change theme">
+          ◐
+        </button>
+
+        <button class="cart-button" id="cartButton">
+          🛒 Cart
+          <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero reveal" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span></span>
+            YOUR MOBILE PARTNER
+          </div>
+
+          <h1>
+            Upgrade your
+            <strong>mobile life.</strong>
+          </h1>
+
+          <p>
+            Buy the latest smartphones, protect your devices with quality
+            accessories, and get reliable same-day mobile repairs.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#phones" class="button button-primary">
+              Shop mobiles <span>→</span>
+            </a>
+
+            <a href="#repair" class="button button-outline">
+              Book a repair
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>5K+</strong>
+              <small>Devices repaired</small>
+            </div>
+
+            <div>
+              <strong>10+</strong>
+              <small>Years of trust</small>
+            </div>
+
+            <div>
+              <strong>4.9</strong>
+              <small>Customer rating</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-ring"></div>
+
+          <div class="phone-showcase">
+            <img
+              src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85"
+              alt="Modern smartphone"
+            />
+
+            <div class="phone-overlay"></div>
+
+            <div class="phone-label">
+              <small>NEW GENERATION</small>
+              <strong>POWERFUL.  
+CONNECTED.</strong>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-one">📱</div>
+          <div class="floating-chip chip-two">⚡</div>
+
+          <div class="trust-card">
+            <span>✓</span>
+            <div>
+              <strong>Genuine products</strong>
+              <small>Warranty included</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits reveal">
+      <div class="container benefits-grid">
+
+        <div class="benefit">
+          <span>✓</span>
+          <div>
+            <strong>Original products</strong>
+            <small>100% genuine devices</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>🔧</span>
+          <div>
+            <strong>Expert repairs</strong>
+            <small>Skilled technicians</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>⚡</span>
+          <div>
+            <strong>Quick service</strong>
+            <small>Same-day repair</small>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <span>🛡️</span>
+          <div>
+            <strong>Warranty support</strong>
+            <small>Service you can trust</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Phone Products -->
+    <section class="section products-section" id="phones">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">LATEST DEVICES</div>
+            <h2>Find your next phone.</h2>
+          </div>
+
+          <p>
+            Explore popular smartphones with great features, reliable
+            performance, and warranty support.
+          </p>
+        </div>
+
+        <div class="product-toolbar reveal">
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Search phones and accessories..."
+            />
+          </div>
+
+          <select id="categoryFilter">
+            <option value="All">All products</option>
+            <option value="Smartphones">Smartphones</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Repair Parts">Repair Parts</option>
+          </select>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <p class="empty-products" id="emptyProducts">
+          No products found. Try another search.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Repair Section -->
+    <section class="section repair-section" id="repair">
+      <div class="container repair-grid">
+
+        <div class="repair-image reveal">
+          <img
+            src="https://files.manuscdn.com/search-media/310519663446112952/OO4srgXGvcK2CddXJ3khlg/6gfEefhBvf75euoijYdJj4.jpg"
+            alt="Mobile phone technician repairing a device"
+          />
+
+          <div class="repair-image-overlay"></div>
+
+          <div class="repair-badge">
+            <strong>30+</strong>
+            <small>REPAIR SERVICES</small>
+          </div>
+        </div>
+
+        <div class="repair-content reveal">
+          <div class="eyebrow">MOBILE REPAIR SERVICES</div>
+
+          <h2>
+            Broken phone?
+            <strong>We can fix it.</strong>
+          </h2>
+
+          <p>
+            From cracked screens to battery replacement, our trained technicians
+            use quality parts and professional tools.
+          </p>
+
+          <ul class="repair-list">
+            <li><span>✓</span> Screen and glass replacement</li>
+            <li><span>✓</span> Battery replacement</li>
+            <li><span>✓</span> Charging port repair</li>
+            <li><span>✓</span> Speaker and microphone repair</li>
+            <li><span>✓</span> Software and performance support</li>
+          </ul>
+
+          <a href="#booking" class="button button-primary">
+            Book a repair <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Accessories Banner -->
+    <section class="accessories-banner-section" id="accessories">
+      <div class="container accessories-banner reveal">
+
+        <div class="accessories-content">
+          <div class="eyebrow light">PROTECT YOUR DEVICE</div>
+
+          <h2>
+            Accessories that
+            <strong>fit your style.</strong>
+          </h2>
+
+          <p>
+            Shop cases, chargers, earbuds, cables, screen guards, and more.
+          </p>
+
+          <button class="button button-light" id="accessoriesButton">
+            Shop accessories <span>→</span>
+          </button>
+        </div>
+
+        <div class="accessories-image">
+          <img
+            src="https://files.manuscdn.com/search-media/310519663446112952/OO4srgXGvcK2CddXJ3khlg/EvJaGg9TJjwagygxWWnXQL.jpg"
+            alt="Mobile accessories"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section">
+      <div class="container">
+
+        <div class="section-heading centered reveal">
+          <div class="eyebrow">WHY FIXPOINT</div>
+          <h2>More than a mobile shop.</h2>
+          <p>
+            We help you buy, protect, repair, and enjoy your devices with
+            confidence.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <span>📱</span>
+            <h3>Mobile sales</h3>
+            <p>
+              Compare popular smartphones and choose the right device for your
+              needs and budget.
+            </p>
+            <a href="#phones">Browse phones →</a>
+          </article>
+
+          <article class="service-card featured-service reveal">
+            <span>🔧</span>
+            <h3>Professional repairs</h3>
+            <p>
+              Reliable repairs using quality components and experienced
+              technicians.
+            </p>
+            <a href="#booking">Book a repair →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span>🎧</span>
+            <h3>Mobile accessories</h3>
+            <p>
+              Find useful accessories for charging, protection, audio, and
+              everyday convenience.
+            </p>
+            <a href="#accessories">Shop accessories →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking-section" id="booking">
+      <div class="container booking-grid">
+
+        <div class="booking-content reveal">
+          <div class="eyebrow light">BOOK A SERVICE</div>
+
+          <h2>
+            Get your phone
+            <strong>working again.</strong>
+          </h2>
+
+          <p>
+            Tell us what happened and our team will contact you with an
+            estimated repair time and price.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <span>☎</span>
+              <strong>+91 98765 43210</strong>
+            </div>
+
+            <div>
+              <span>⌖</span>
+              <strong>25 Market Road, Chennai</strong>
+            </div>
+
+            <div>
+              <span>◷</span>
+              <strong>Open daily: 9:00 AM – 8:30 PM</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <h3>Repair request</h3>
+
+          <label for="customerName">Your name</label>
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="customerPhone">Phone number</label>
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="+91 XXXXX XXXXX"
+            required
+          />
+
+          <label for="deviceType">Device</label>
+          <input
+            type="text"
+            id="deviceType"
+            placeholder="Example: iPhone 13, Samsung A54"
+            required
+          />
+
+          <label for="repairIssue">Repair required</label>
+          <select id="repairIssue" required>
+            <option value="">Select an issue</option>
+            <option>Broken screen</option>
+            <option>Battery replacement</option>
+            <option>Charging problem</option>
+            <option>Water damage</option>
+            <option>Software problem</option>
+            <option>Other issue</option>
+          </select>
+
+          <button type="submit" class="button button-primary full-width">
+            Submit repair request <span>→</span>
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section reveal">
+      <div class="container newsletter-content">
+        <div>
+          <div class="eyebrow">STAY UPDATED</div>
+          <h2>Get deals and mobile tips.</h2>
+          <p>
+            Subscribe for new phone launches, accessory offers, and repair tips.
+          </p>
+        </div>
+
+        <form id="newsletterForm">
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Your email address"
+            required
+          />
+
+          <button type="submit" class="button button-dark">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="eyebrow">CONTACT FIXPOINT</div>
+          <h2>Need help choosing a device?</h2>
+          <p>
+            Our team can help you compare phones, select accessories, or
+            understand a repair requirement.
+          </p>
+
+          <div class="contact-details light-details">
+            <div>
+              <span>☎</span>
+              <strong>+91 98765 43210</strong>
+            </div>
+
+            <div>
+              <span>✉</span>
+              <strong>hello@fixpoint.com</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send an enquiry</h3>
+
+          <label for="contactName">Your name</label>
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="contactMessage">Message</label>
+          <textarea
+            id="contactMessage"
+            rows="4"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button type="submit" class="button button-primary full-width">
+            Send message <span>→</span>
+          </button>
+
+          <p class="contact-message" id="contactMessageResult"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark">FP</span>
+          <span>Fix<span>Point</span></span>
+        </a>
+
+        <p>
+          Your trusted partner for mobile sales, repairs, and accessories.
+        </p>
+
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">◎</a>
+          <a href="#">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#phones">Phones</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#repair">Repair services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Customer care</h4>
+        <a href="#">Warranty information</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Returns policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Store hours</h4>
+        <p>Monday – Sunday</p>
+        <strong>9:00 AM – 8:30 PM</strong>
+        <small>Same-day repair available</small>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 FixPoint Mobile Hub.</span>
+      <span>Connect better. Live smarter.</span>
+    </div>
+  </footer>
+
+  <!-- Cart -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div>
+        <div class="eyebrow">YOUR CART</div>
+        <h3>Selected products</h3>
+      </div>
+
+      <button class="close-button" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <span>🛒</span>
+        <p>Your cart is empty.</p>
+        <small>Add products to get started.</small>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="button button-primary full-width" id="checkoutButton">
+        Proceed to checkout
+      </button>
+
+      <small>Demo checkout — no payment is processed.</small>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
