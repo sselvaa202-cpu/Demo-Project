@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="MediCare Pharmacy - trusted medicines, wellness products, and pharmacist support."
+  />
+  <title>MediCare Pharmacy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <p>Open today: 8:00 AM – 10:00 PM</p>
+      <p>Free delivery on orders above ₹499</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="logo">
+        <span class="logo-icon">+</span>
+        <span>Medi<span>Care</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchButton" aria-label="Search">
+          <span>⌕</span>
+        </button>
+        <button class="cart-button" id="cartButton">
+          <span>Cart</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Your health, our priority
+          </div>
+
+          <h1>
+            Better health begins
+            <span>with better care.</span>
+          </h1>
+
+          <p>
+            Quality medicines, trusted advice, and everyday wellness products
+            delivered to your doorstep.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">Shop medicines <span>→</span></a>
+            <a href="#services" class="btn btn-outline">Explore services</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="avatar-group">
+              <span>R</span>
+              <span>A</span>
+              <span>S</span>
+              <span>+</span>
+            </div>
+            <div>
+              <strong>10,000+ happy customers</strong>
+              <small>Trusted by families every day</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card main-card">
+            <div class="card-orb orb-one"></div>
+            <div class="card-orb orb-two"></div>
+
+            <div class="medical-cross">+</div>
+
+            <div class="hero-card-text">
+              <span>PERSONALIZED CARE</span>
+              <h3>Feel your best,  
+every day.</h3>
+            </div>
+
+            <div class="medicine-bottle">
+              <div class="bottle-cap"></div>
+              <div class="bottle-body">
+                <div class="bottle-label">
+                  <strong>MEDI  
+CARE</strong>
+                  <small>VITAMINS</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card delivery-card">
+            <div class="floating-icon">🚚</div>
+            <div>
+              <strong>Fast delivery</strong>
+              <small>At your doorstep</small>
+            </div>
+          </div>
+
+          <div class="floating-card rating-card">
+            <strong>4.9</strong>
+            <span>★★★★★</span>
+            <small>Customer rating</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <span class="trust-icon">✓</span>
+          <div>
+            <strong>100% Genuine</strong>
+            <small>Quality assured products</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">⌁</span>
+          <div>
+            <strong>Quick Delivery</strong>
+            <small>Same-day delivery available</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">♡</span>
+          <div>
+            <strong>Expert Guidance</strong>
+            <small>Talk to our pharmacists</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">↺</span>
+          <div>
+            <strong>Easy Returns</strong>
+            <small>Simple return policy</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">SHOP BY CATEGORY</div>
+          <h2>Everything you need  
+<span>to stay healthy.</span></h2>
+          <p>Browse our carefully selected range of health and wellness products.</p>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card category-blue" data-category="Medicine">
+            <span class="category-icon">💊</span>
+            <strong>Medicines</strong>
+            <small>Prescription & OTC</small>
+            <span class="category-arrow">→</span>
+          </button>
+
+          <button class="category-card category-green" data-category="Wellness">
+            <span class="category-icon">🌿</span>
+            <strong>Vitamins & Wellness</strong>
+            <small>Daily health support</small>
+            <span class="category-arrow">→</span>
+          </button>
+
+          <button class="category-card category-yellow" data-category="Personal Care">
+            <span class="category-icon">🧴</span>
+            <strong>Personal Care</strong>
+            <small>Care for every day</small>
+            <span class="category-arrow">→</span>
+          </button>
+
+          <button class="category-card category-purple" data-category="Baby Care">
+            <span class="category-icon">🍼</span>
+            <strong>Baby Care</strong>
+            <small>Gentle & trusted</small>
+            <span class="category-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <div class="eyebrow">POPULAR PRODUCTS</div>
+            <h2>Our customer favourites.</h2>
+          </div>
+          <a href="#products" class="view-all" id="viewAll">View all products →</a>
+        </div>
+
+        <div class="product-toolbar">
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Search medicines, vitamins, products..."
+            />
+          </div>
+
+          <select id="categoryFilter" class="category-filter">
+            <option value="All">All categories</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Wellness">Wellness</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Baby Care">Baby Care</option>
+          </select>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <!-- Products are rendered by JavaScript -->
+        </div>
+
+        <p class="empty-products" id="emptyProducts">
+          No products found. Try a different search.
+        </p>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="promo-section">
+      <div class="container promo-banner">
+        <div class="promo-copy">
+          <div class="eyebrow light">WEEKLY WELLNESS PICK</div>
+          <h2>Feel good from  
+the inside out.</h2>
+          <p>Get up to 25% off on selected vitamins and wellness products.</p>
+          <button class="btn btn-white" id="promoButton">Shop wellness <span>→</span></button>
+        </div>
+
+        <div class="promo-visual">
+          <div class="promo-circle"></div>
+          <div class="promo-leaf leaf-one">◒</div>
+          <div class="promo-leaf leaf-two">◒</div>
+          <div class="promo-bottle">
+            <div class="promo-bottle-top"></div>
+            <div class="promo-bottle-label">
+              <strong>DAILY  
+VITALITY</strong>
+              <small>IMMUNITY SUPPORT</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">OUR SERVICES</div>
+          <h2>More than just a pharmacy.</h2>
+          <p>Personalized support to help you make better health decisions.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
+            <div class="service-icon">🩺</div>
+            <h3>Talk to a pharmacist</h3>
+            <p>Get reliable answers to your medication and wellness questions.</p>
+            <a href="#contact">Book a consultation →</a>
+          </article>
+
+          <article class="service-card highlighted-service">
+            <div class="service-number">02</div>
+            <div class="service-icon">📋</div>
+            <h3>Prescription support</h3>
+            <p>Upload your prescription and we will help you find what you need.</p>
+            <a href="#contact">Upload prescription →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <div class="service-icon">❤️</div>
+            <h3>Health checkups</h3>
+            <p>Track important health metrics with our convenient in-store checks.</p>
+            <a href="#contact">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <div class="about-image-content">
+            <span class="about-plus">+</span>
+            <span class="about-image-label">CARE  
+THAT  
+<em>MATTERS</em></span>
+          </div>
+          <div class="about-stat">
+            <strong>15+</strong>
+            <span>Years of  
+trusted care</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="eyebrow">WHY MEDICARE</div>
+          <h2>Healthcare that puts <span>you first.</span></h2>
+          <p>
+            We believe pharmacy care should be personal, simple, and accessible.
+            Our team is here to support you at every step of your health journey.
+          </p>
+
+          <ul class="check-list">
+            <li><span>✓</span> Licensed and experienced pharmacists</li>
+            <li><span>✓</span> Carefully sourced genuine products</li>
+            <li><span>✓</span> Friendly support for the whole family</li>
+            <li><span>✓</span> Convenient delivery and pickup options</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Learn more about us <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">CUSTOMER STORIES</div>
+          <h2>Loved by our community.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The staff are always so helpful and patient. I never feel rushed
+              when asking questions about my medicines.”
+            </p>
+            <div class="customer">
+              <span class="customer-avatar avatar-pink">P</span>
+              <div>
+                <strong>Priya R.</strong>
+                <small>Regular customer</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card testimonial-featured">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Fast delivery, genuine products, and very easy ordering. MediCare
+              has become our family pharmacy.”
+            </p>
+            <div class="customer">
+              <span class="customer-avatar avatar-blue">A</span>
+              <div>
+                <strong>Arun K.</strong>
+                <small>Regular customer</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “I appreciate how they remind me about refills. It makes managing
+              my parents’ medicines much easier.”
+            </p>
+            <div class="customer">
+              <span class="customer-avatar avatar-yellow">S</span>
+              <div>
+                <strong>Shalini M.</strong>
+                <small>Regular customer</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-content">
+          <div class="eyebrow light">GET IN TOUCH</div>
+          <h2>We are here  
+when you need us.</h2>
+          <p>
+            Have a question about a product, prescription, or delivery?
+            Our friendly team is ready to help.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span>☎</span>
+              <div>
+                <small>Call us</small>
+                <strong>+91 98765 43210</strong>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span>✉</span>
+              <div>
+                <small>Email us</small>
+                <strong>hello@medicare.com</strong>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span>⌖</span>
+              <div>
+                <small>Visit us</small>
+                <strong>24 Health Street, Chennai</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Send us a message</h3>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+
+          <label for="message">How can we help?</label>
+          <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="btn btn-primary full-width">
+            Send message <span>→</span>
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container newsletter-content">
+        <div>
+          <h3>Get healthy tips in your inbox.</h3>
+          <p>Subscribe for wellness advice, offers, and pharmacy updates.</p>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-dark">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon">+</span>
+          <span>Medi<span>Care</span></span>
+        </a>
+        <p>Making better health easier, one family at a time.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#products">All products</a>
+        <a href="#services">Our services</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Customer care</h4>
+        <a href="#">Delivery information</a>
+        <a href="#">Returns & refunds</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & conditions</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Store hours</h4>
+        <p>Monday – Sunday</p>
+        <strong>8:00 AM – 10:00 PM</strong>
+        <p class="footer-note">Pharmacist available all day</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2025 MediCare Pharmacy. This is a sample website.</p>
+      <p>Made with care for healthier communities.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">YOUR CART</span>
+        <h3>Shopping cart</h3>
+      </div>
+      <button class="close-button" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <span>🛒</span>
+        <p>Your cart is empty.</p>
+        <small>Add some products to get started.</small>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <button class="btn btn-primary full-width" id="checkoutButton">
+        Proceed to checkout
+      </button>
+      <small class="secure-text">🔒 Secure and safe checkout</small>
+    </div>
+  </aside>
+
+  <!-- Toast Message -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
